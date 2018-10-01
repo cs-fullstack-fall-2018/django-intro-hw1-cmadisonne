@@ -9,9 +9,15 @@ path('color/<str:userInput>/', views.blueOrRed)
 
 # Function
 def blueOrRed (request, userInput):
+    
     if (userInput == 'blue'):
+    
         return HttpResponse ("Sky")
+        
     elif (userInput == 'red'):
+    
         return HttpResponse ("Fire")
+        
     else:
+    
         return HttpResponse ('Error')
